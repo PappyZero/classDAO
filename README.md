@@ -10,7 +10,8 @@ A Decentralized Autonomous Organization (DAO) is a digital entity that operates 
 2. Autonomous: Self-governing, with rules encoded in smart contracts.
 3. Organization: A collective entity with shared goals and interests.
 
-DAO features:
+
+# Features of classDAO :
 
 1. Blockchain-based: Utilizes distributed ledger technology.
 2. Smart contracts: Self-executing contracts with predefined rules.
@@ -19,7 +20,7 @@ DAO features:
 5. Autonomous decision-making: Smart contracts enforce rules.
 
 
-In building this classDAO, several types of contracts were necessary:
+In building this classDAO, several types of contracts were necessary :
 
 1. Governance Contract: Defines decision-making processes, voting mechanisms, and proposal submission rules.
 
@@ -29,3 +30,4 @@ In building this classDAO, several types of contracts were necessary:
 
 4. Proposal Contract: Handles proposal submission, voting, and execution.
 
+5. ERC-721 Token Standard (Ethereum): For non-fungible tokens (NFTs).
