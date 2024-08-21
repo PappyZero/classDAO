@@ -2,3 +2,18 @@
 
 ClassDAO is a decentralized autonomous organization (DAO) designed for a class or group where each member holds a unique NFT that represents their membership. 
 The DAO will allow members to submit and vote on proposals. Only members holding the class NFT can participate in the governance process.
+
+
+A # Decentralized Autonomous Organization (DAO) is a digital entity that operates on a blockchain network, enabling decentralized decision-making and autonomous governance. Key characteristics:
+
+1. Decentralized: No central authority or single point of control.
+2. Autonomous: Self-governing, with rules encoded in smart contracts.
+3. Organization: A collective entity with shared goals and interests.
+
+DAO features:
+
+1. Blockchain-based: Utilizes distributed ledger technology.
+2. Smart contracts: Self-executing contracts with predefined rules.
+3. Token-based governance: Members vote using tokens.
+4. Transparent: All transactions and decisions publicly visible.
+5. Autonomous decision-making: Smart contracts enforce rules.
