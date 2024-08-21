@@ -20,6 +20,11 @@ A Decentralized Autonomous Organization (DAO) is a digital entity that operates 
 5. Autonomous decision-making: Smart contracts enforce rules.
 
 
+
+
+
+
+# Contract Details
 In building this classDAO, several types of contracts were necessary :
 
 1. Governance Contract: Defines decision-making processes, voting mechanisms, and proposal submission rules.
