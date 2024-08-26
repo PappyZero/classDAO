@@ -36,3 +36,4 @@ In building this classDAO, several types of contracts were necessary :
 4. Proposal Contract: Handles proposal submission, voting, and execution.
 
 5. ERC-721 Token Standard (Ethereum): For non-fungible tokens (NFTs).
+   DECENTRALIZED AUTONOMUS ORGANIZATION
