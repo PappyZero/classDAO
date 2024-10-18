@@ -1,0 +1,33 @@
+REMIX : 
+timelock : 0x31728dBF385DB523e8abC0E990678Ae675545A9b
+
+nft : 0xab64AC53A0bE9569673b868cB363552D78733491
+
+governor : 0x547C12B2D11154Cd9a871d5Ba3C75a1A0402E204
+
+
+
+VS CODE : 
+Deploying contracts with the account: 0x3588A759E06FFeFFfc7b0b8cb3aB061997401328
+
+MembershipNFT deployed at 0xb491986Ec0BEcDc55deB6937073AD7a213D706A9
+
+Governance Contract deployed at 0x323A2623f619a4846365Bd843F0bb854046426ee
+
+
+Successfully verified contract ClassDAONFT on the block explorer.
+https://sepolia.basescan.org/address/0xb491986Ec0BEcDc55deB6937073AD7a213D706A9#code
+
+Successfully verified contract MyGovernor on the block explorer.
+https://sepolia.basescan.org/address/0x323A2623f619a4846365Bd843F0bb854046426ee#code
+
+
+IPFS Gateway URL:
+https://ipfs.filebase.io/ipfs/QmQemoJK74xGQPAuWGTKmH6cpXLZngwWRh8vULTr78T8Ys
+
+
+
+VUNA-EXEC-DAO Tally FrontEnd:
+https://www.tally.xyz/gov/vuna-exec-dao
+
+https://www.tally.xyz/gov/unofficial-link-dao-sepolia
