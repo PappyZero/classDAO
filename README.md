@@ -1,73 +1,48 @@
-# classDAO
-# Overview
-ClassDAO is a decentralized autonomous organization (DAO) designed for a class or group where each member holds a unique NFT representing their membership. 
-The DAO will allow members to submit and vote on proposals. Only members holding the class NFT can participate in the governance process.
+## classDAO Overview
+<br>
 
+**ClassDAO** is a decentralized autonomous organization (DAO) tailored for a class or group where each member holds a unique NFT representing their membership. The DAO allows members to submit and vote on proposals, ensuring that only those holding the class NFT can participate in the governance process, promoting exclusive membership engagement and decentralized decision-making.
 
-A Decentralized Autonomous Organization (DAO) is a digital entity that operates on a blockchain network, enabling decentralized decision-making and autonomous governance. Key characteristics:
+## What is a DAO?
+A Decentralized Autonomous Organization (DAO) is a digital entity operating on a blockchain network that facilitates decentralized governance and decision-making. Its key characteristics include:
+<br>
+Decentralized: No central authority or single point of control; all members have equal say in decisions.
+Autonomous: Self-governing, with processes and rules encoded in smart contracts that execute without manual intervention.
+Organization: A collective entity where members with shared goals participate in governance and operations.
 
-1. Decentralized: No central authority or single point of control.
-2. Autonomous: Self-governing, with rules encoded in smart contracts.
-3. Organization: A collective entity with shared goals and interests.
+## Key Features of classDAO
+**Blockchain-based:** Built on a decentralized ledger to ensure transparency, immutability, and trust in the system.
+**Smart Contracts:** Self-executing contracts that define governance rules, proposal handling, and membership criteria.
+**Token-based Governance:** Votes are cast using tokens, with each NFT representing a member’s right to participate in the decision-making process.
+**Transparency:** All transactions, proposals, and decisions are publicly visible on the blockchain.
+**Autonomous Decision-Making:** Voting outcomes are executed automatically by smart contracts, ensuring community-driven governance without manual intervention.
 
+## Contract Details
+Several key smart contracts were built for classDAO to ensure decentralized governance and membership control:
 
-# Features of classDAO :
+**1. Governance Contract**
+This contract manages the decision-making process, proposal submissions, voting, and execution. Its key features include:
+Proposal Submission: Only NFT-holding members can submit proposals.
+Voting Mechanism: One NFT equals one vote, ensuring fairness and transparency.
+Execution of Proposals: Once consensus is reached, proposals are automatically executed by the contract.
+<br>
+**2. Membership Contract (NFT)**
+This contract mints an NFT for each DAO member, representing their membership. Key features include:
+NFT Minting: Each member receives a unique NFT minted to their wallet upon joining.
+Whitelisting Mechanism: Only wallets holding the classDAO NFT are allowed to interact with the governance contract, ensuring that only verified members can vote.
+Voting Access: Without the NFT, a wallet address cannot participate in governance activities, safeguarding exclusive membership participation.
 
-1. Blockchain-based: Utilizes distributed ledger technology.
-2. Smart contracts: Self-executing contracts with predefined rules.
-3. Token-based governance: Members vote using tokens.
-4. Transparent: All transactions and decisions are publicly visible.
-5. Autonomous decision-making: Smart contracts enforce rules.
+## REMIX DEFAULT WORKSPACE
+When using the Remix IDE to work on classDAO’s smart contracts, the default workspace provides essential directories and files to streamline development:
 
+**contracts:** Holds three smart contracts with increasing levels of complexity.
+**scripts:** Contains four TypeScript files to deploy contracts using web3.js or ethers.js libraries.
+**tests:** Includes Mocha-Chai unit tests for the contracts, allowing for comprehensive testing and debugging.
 
+## SCRIPTS
+The scripts folder contains TypeScript files that deploy the "Storage" contract. To deploy other contracts, simply update the contract's name in the script (e.g., deploy_with_ethers.ts or deploy_with_web3.ts) and provide the necessary constructor arguments.
 
+To run a script:
 
-
-
-# Contract Details
-In building this classDAO, several types of contracts were necessary :
-
-1. Governance Contract: Defines decision-making processes, voting mechanisms, and proposal submission rules.
-
-2. Token Contract: Manages token creation, distribution, and ownership.
-
-3. Membership Contract: Specifies membership requirements, roles, and privileges.
-
-4. Proposal Contract: Handles proposal submission, voting, and execution.
-
-5. ERC-721 Token Standard (Ethereum): For non-fungible tokens (NFTs).
-   DECENTRALIZED AUTONOMUS ORGANIZATION
-
-
-
-
-
-
-# REMIX DEFAULT WORKSPACE
-
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
-
-This workspace contains 3 directories:
-
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
-
-# SCRIPTS
-
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
-
-For the deployment of any other contract, just update the contract's name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
-
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
-
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
-
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+Right-click on the file in the File Explorer and select "Run."
+Ensure the Solidity file is already compiled, as the output from the script will appear in the Remix terminal.
