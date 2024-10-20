@@ -1,39 +1,48 @@
-# classDAO Overview
-classDAO is a decentralized autonomous organization (DAO) tailored for a class or group where each member holds a unique NFT representing their membership. Members can submit and vote on proposals, and only those who hold the class NFT can participate in the governance process, ensuring exclusive membership engagement.
+## classDAO Overview
+<br>
 
-# What is a DAO?
-A Decentralized Autonomous Organization (DAO) operates on a blockchain, enabling decentralized decision-making and governance. The key features include:
+**ClassDAO** is a decentralized autonomous organization (DAO) tailored for a class or group where each member holds a unique NFT representing their membership. The DAO allows members to submit and vote on proposals, ensuring that only those holding the class NFT can participate in the governance process, promoting exclusive membership engagement and decentralized decision-making.
 
-Decentralized: No central authority or single point of control; all members have a say.
-Autonomous: Rules and processes are encoded in smart contracts and executed without manual intervention.
-Organization: A collective of individuals with shared goals and interests.
+## What is a DAO?
+A Decentralized Autonomous Organization (DAO) is a digital entity operating on a blockchain network that facilitates decentralized governance and decision-making. Its key characteristics include:
+<br>
+Decentralized: No central authority or single point of control; all members have equal say in decisions.
+Autonomous: Self-governing, with processes and rules encoded in smart contracts that execute without manual intervention.
+Organization: A collective entity where members with shared goals participate in governance and operations.
 
-# Key Features of classDAO
-Blockchain-based: Built on a decentralized ledger to ensure transparency and immutability.
+## Key Features of classDAO
+**Blockchain-based:** Built on a decentralized ledger to ensure transparency, immutability, and trust in the system.
+**Smart Contracts:** Self-executing contracts that define governance rules, proposal handling, and membership criteria.
+**Token-based Governance:** Votes are cast using tokens, with each NFT representing a member’s right to participate in the decision-making process.
+**Transparency:** All transactions, proposals, and decisions are publicly visible on the blockchain.
+**Autonomous Decision-Making:** Voting outcomes are executed automatically by smart contracts, ensuring community-driven governance without manual intervention.
 
-Smart Contracts: Self-executing contracts that define governance rules, proposal handling, and membership criteria.
+## Contract Details
+Several key smart contracts were built for classDAO to ensure decentralized governance and membership control:
 
-Token-based Governance: Votes are cast using tokens, where each NFT represents membership.
+**1. Governance Contract**
+This contract manages the decision-making process, proposal submissions, voting, and execution. Its key features include:
+Proposal Submission: Only NFT-holding members can submit proposals.
+Voting Mechanism: One NFT equals one vote, ensuring fairness and transparency.
+Execution of Proposals: Once consensus is reached, proposals are automatically executed by the contract.
+<br>
+**2. Membership Contract (NFT)**
+This contract mints an NFT for each DAO member, representing their membership. Key features include:
+NFT Minting: Each member receives a unique NFT minted to their wallet upon joining.
+Whitelisting Mechanism: Only wallets holding the classDAO NFT are allowed to interact with the governance contract, ensuring that only verified members can vote.
+Voting Access: Without the NFT, a wallet address cannot participate in governance activities, safeguarding exclusive membership participation.
 
-Transparency: All transactions, proposals, and decisions are publicly visible on the blockchain.
+## REMIX DEFAULT WORKSPACE
+When using the Remix IDE to work on classDAO’s smart contracts, the default workspace provides essential directories and files to streamline development:
 
-Autonomous Decision-Making: Voting outcomes are automatically executed by smart contracts, enforcing community consensus.
+**contracts:** Holds three smart contracts with increasing levels of complexity.
+**scripts:** Contains four TypeScript files to deploy contracts using web3.js or ethers.js libraries.
+**tests:** Includes Mocha-Chai unit tests for the contracts, allowing for comprehensive testing and debugging.
 
-# Contract Details
-In building classDAO, several key contracts are crucial to ensure decentralized governance and membership control:
+## SCRIPTS
+The scripts folder contains TypeScript files that deploy the "Storage" contract. To deploy other contracts, simply update the contract's name in the script (e.g., deploy_with_ethers.ts or deploy_with_web3.ts) and provide the necessary constructor arguments.
 
-Governance Contract:
-This smart contract handles proposal submissions, voting, and execution. It defines:
+To run a script:
 
-The decision-making process.
-Voting mechanisms (e.g., one NFT = one vote).
-Proposal submission rules (only members can submit proposals).
-Execution of proposals once they reach consensus.
-
-
-Membership Contract (NFT):
-This contract mints an NFT for each DAO member. The NFTs act as membership tokens and are unique to each individual. Key features include:
-
-NFT Minting: Members receive an NFT minted to their wallet address upon joining.
-Whitelisting Mechanism: When interacting with the governance contract, the member’s wallet must hold the classDAO NFT. Only verified NFT holders can vote.
-Voting Access: Without the NFT, a wallet address cannot participate in governance activities, ensuring that only authenticated members can vote.
+Right-click on the file in the File Explorer and select "Run."
+Ensure the Solidity file is already compiled, as the output from the script will appear in the Remix terminal.
